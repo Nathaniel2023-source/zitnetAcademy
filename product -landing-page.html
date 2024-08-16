@@ -6,6 +6,287 @@
     <link rel="stylesheet" href="landing.css">
     <title>Document</title>
 </head>
+    <style>
+        /* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#page-wrapper {
+  width: 100%;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  height: 50px;
+}
+
+nav {
+  margin-right: 30px;
+}
+
+.lists {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.lists li {
+  margin-left: 20px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  color: #ddd;
+}
+
+/* Hero Section */
+#hero {
+  background: url('https://via.placeholder.com/1920x600') no-repeat center center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+#hero h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+#form {
+  display: flex;
+  justify-content: center;
+}
+
+#email {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  width: 300px;
+}
+
+#submit {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #ff6f61;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+#submit:hover {
+  background-color: #ff4d4d;
+}
+
+/* Features Section */
+#features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 50px 0;
+}
+
+.grid {
+  background: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.icon {
+  margin-bottom: 10px;
+}
+
+.desc h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.desc p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* How It Works Section */
+#how-it-works {
+  padding: 50px 0;
+  text-align: center;
+}
+
+#video {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 10px;
+}
+
+/* Pricing Section */
+#pricing {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 0;
+}
+
+.product {
+  background: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 30%;
+}
+
+.level {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.product h2 {
+  font-size: 36px;
+  color: #ff6f61;
+}
+
+.product ol {
+  text-align: left;
+  margin: 20px 0;
+  padding-left: 20px;
+}
+
+.product button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #ff6f61;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.product button:hover {
+  background-color: #ff4d4d;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+footer li {
+  margin: 0 15px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #ddd;
+}
+
+footer span {
+  display: block;
+  margin-top: 10px;
+}
+
+/* DSE Quicksearch Styles */
+#dse-quicksearch {
+  display: none;
+}
+
+#dse-quicksearch div {
+  color: white;
+  background-color: #484644;
+  border: 1px solid #666;
+  border-radius: 6px;
+  box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.14);
+  font-size: 13px;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+#dse-disabledpopup {
+  display: block;
+  position: relative;
+  padding: 8px;
+  line-height: 16px;
+}
+
+#dse-disabledpopup span {
+  cursor: pointer;
+}
+
+#dse-search,
+#dse-copy,
+#dse-moreoptions {
+  float: left;
+  padding: 8px 12px;
+  line-height: 15px;
+  cursor: pointer;
+}
+
+#dse-moreoptions {
+  position: relative;
+}
+
+#dse-popup {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 105px;
+  width: 160px;
+  box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.14);
+}
+
+#dse-popup div {
+  padding: 8px 12px;
+  line-height: 15px;
+  cursor: pointer;
+  text-align: left;
+}
+
+#dse-popup hr {
+  margin: 0;
+  border: 0.5px solid #D2D0CE;
+  background-color: #3b3a39;
+}
+
+    </style>
 <body>
     <div id="page-wrapper">
       <header id="header">
